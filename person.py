@@ -16,8 +16,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-__version__ = '0.0'
+__version__ = '0.0+bf16aeb'
 __all__ = ['Person', 'load_person']
+
+ABOUT = """person module for 3org
+Version 0.0 (master@bf16aeb)
+committed 3 April 2022
+Data version 0 (0x00000000)"""
 
 import json
 import logging
@@ -47,7 +52,8 @@ class Person():
                 org: self.org,
                 contacts: self.contacts,
                 activities: self.activities,
-                uuid: str(self.uuid)}
+                uuid: str(self.uuid),
+                data_version: 0}
         json.dump(open(f"data/people/{name}", "w"), data)
 
     def add_contact(self, type, value):
@@ -58,8 +64,15 @@ class Person():
 
 def load_person(name):
     """Method to load a person from a file."""
+
+    data_versions_supported = [0]
     name = replace_forbidden(name)
     data = json.load(open(f"data/person/{name}", "r"))
     return Person(name=data.name, description=data.description,
                   org=data.org, contacts=data.contacts,
                   activities=data.activities, uuid=uuid.UUID(data.uuid))
+
+if __name__ == "__main__":
+    print("This module is not intended to be used directly!/nLoading\
+    3org.py...")
+    exec("3org.py")
