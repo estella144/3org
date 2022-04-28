@@ -26,6 +26,7 @@ Data version 0 (0x00000000)"""
 
 import json
 import logging
+import logging.config
 import uuid
 
 from replace_forbidden import replace_forbidden
@@ -35,13 +36,17 @@ class Person():
     dealt with internally.)"""
 
     def __init__(self, name, description, org="No Organisation",
-                 contacts={}, activities=[], uuid=uuid.uuid1()):
-        super(Person, self).__init__()
+        contacts={}, activities=[], uuid=uuid.uuid1()):
+        logging.config.fileConfig('conf/logging_person.conf')
+        # super(Person, self).__init__()
+        init.info('Person constructor called.')
         self.name = name
         self.description = description
         self.org = org
         self.contacts = contacts
         self.uuid = uuid
+        init.info(f'Person {uuid.time_low} constructed successfully. Saving.')
+        self.save()
 
     def __str__(self):
         return self.name
@@ -73,6 +78,8 @@ def load_person(name):
                   activities=data.activities, uuid=uuid.UUID(data.uuid))
 
 if __name__ == "__main__":
+    logging.config.fileConfig('conf/logging_person.conf')
+    person.log('The program was called improperly from person. Loading main program.')
     print("This module is not intended to be used directly!/nLoading\
     3org.py...")
     exec("3org.py")
