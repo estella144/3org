@@ -37,6 +37,7 @@ class Person():
 
     def __init__(self, name, description, org="No Organisation",
         contacts={}, activities=[], uuid=uuid.uuid1()):
+        print("Constructing Person, do not quit program.")
         logging.config.fileConfig('conf/logging_person.conf')
         # super(Person, self).__init__()
         init.info('Person constructor called.')
@@ -46,12 +47,16 @@ class Person():
         self.contacts = contacts
         self.uuid = uuid
         init.info(f'Person {uuid.time_low} constructed successfully. Saving.')
+        print(f'Person {uuid.time_low} constructed successfully. Saving.')
         self.save()
+        print(f'Person {uuid.time_low} saved successfully.')
+        print(f'You may now quit the program without affecting this person.')
 
     def __str__(self):
-        return self.name
+        return f"Person: {self.name} ({self.uuid.time_low})"
 
     def save(self):
+        print(f"Saving person {self.uuid.time_low} do not quit the program...")
         data = {name: self.name,
                 description: self.description,
                 org: self.org,
@@ -65,7 +70,7 @@ class Person():
         if type not in self.contacts:
             self.contacts.add(type, value)
         else:
-            print("Failed to add field to contact: {type} already exists.")
+            print(f"Failed to add field to contact: {type} already exists.")
 
 def load_person(name):
     """Method to load a person from a file."""
