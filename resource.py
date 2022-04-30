@@ -24,7 +24,7 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+7f03b2f'
+__version__ = '0.0+3e6b701'
 __all__ = ['Resource', 'ConsumableResource', 'Location']
 ABOUT = """resource module for 3org
 Version 0.0 (master@7f03b2f)
@@ -65,7 +65,7 @@ class ConsumableResource(Resource):
         # list of args to datetime.datetime in increasing granularity
 
     def __str__(self):
-        super(ConsumableResource, self).__str__()
+        return f"ConsumableResource: {self.name} ({self.uuid.time_low})"
 
     def __repr__(self):
         rep = f"ConsumableResource(resource_type, name, description,\n\
@@ -79,3 +79,11 @@ class Location(Resource):
                  items=[]):
         super(Location, self).__init__()
         self.items = items
+
+class Account(Resource):
+    """Subclass of Resource for financial accounts."""
+
+    def __init__(self, resource_type, name, description, location,
+                 currency='GBP', balance=0):
+        super(Account, self).__init__()
+        self.balance = balance

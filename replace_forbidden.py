@@ -20,7 +20,7 @@ __version__ = '0.0'
 __all__ = ['replace_forbidden']
 
 ABOUT = """replace_forbidden module for 3org
-Version 0.0 (master@7f03b2f)
+Version 0.0 (master@3e6b701)
 committed 30 April 2022
 Data version 0 (0x00000000)"""
 

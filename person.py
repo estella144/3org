@@ -24,7 +24,7 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+7f03b2f'
+__version__ = '0.0+3e6b701'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
