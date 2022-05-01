@@ -21,7 +21,11 @@ __all__ = ['replace_forbidden']
 
 ABOUT = """replace_forbidden module for 3org
 Version 0.0 (master@90bf065)
+<<<<<<< HEAD
 committed 1 May 2022
+=======
+committed 30 April 2022
+>>>>>>> 1d931cc6bd7f35245b3667b12a87d314bbdb5158
 Data version 0 (0x00000000)"""
 
 def replace_forbidden(string):

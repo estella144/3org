@@ -29,7 +29,11 @@ __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
 Version 0.0 (master@90bf065)
+<<<<<<< HEAD
 committed 1 May 2022
+=======
+committed 30 April 2022
+>>>>>>> 1d931cc6bd7f35245b3667b12a87d314bbdb5158
 Data version 0 (0x00000000)"""
 
 class Person():
