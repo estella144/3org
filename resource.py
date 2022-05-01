@@ -52,7 +52,7 @@ class Resource():
                 location: self.location,
                 uuid: str(self.uuid),
                 data_version: 0}
-        json.dump(open(f"data/people/{name}", "w"), data)
+        json.dump(open(f"data/people/{self.name}", "w"), data)
 
 class ConsumableResource(Resource):
     """Subclass of Resource for (easily) consumable resources."""
