@@ -16,11 +16,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-__version__ = '0.0'
+__version__ = '0.0+90bf065'
 __all__ = ['replace_forbidden']
 
 ABOUT = """replace_forbidden module for 3org
-Version 0.0 (master@3e6b701)
+Version 0.0 (master@90bf065)
 committed 30 April 2022
 Data version 0 (0x00000000)"""
 
