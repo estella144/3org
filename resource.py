@@ -24,11 +24,11 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+3e6b701'
+__version__ = '0.0+90bf065'
 __all__ = ['Resource', 'ConsumableResource', 'Location']
 ABOUT = """resource module for 3org
-Version 0.0 (master@7f03b2f)
-committed 30 April 2022
+Version 0.0 (master@90bf065)
+committed 1 May 2022
 Data version 0 (0x00000000)"""
 
 class Resource():
