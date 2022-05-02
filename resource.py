@@ -52,7 +52,7 @@ class Resource():
                 location: self.location,
                 uuid: str(self.uuid),
                 data_version: 0}
-        json.dump(open(f"data/people/{self.name}", "w"), data)
+        json.dump(open(f"data/resources/{self.uuid.time_low}", "w"), data)
 
 class ConsumableResource(Resource):
     """Subclass of Resource for (easily) consumable resources."""
@@ -67,10 +67,19 @@ class ConsumableResource(Resource):
     def __str__(self):
         return f"ConsumableResource: {self.name} ({self.uuid.time_low})"
 
-    def __repr__(self):
-        rep = f"ConsumableResource(resource_type, name, description,\n\
-        expires)"
-        return rep
+    def save(self):
+        data = {name: self.name,
+                resource_type: self.resource_type,
+                description: self.description,
+                location: self.location,
+                expires: self.expires,
+                uuid: str(self.uuid),
+                data_version: 0}
+<<<<<<< Updated upstream
+        json.dump(open(f"data/resources/{self.uuid.time_low}", "w"), data)
+=======
+        json.dump(open(f"data/people/{self.name}", "w"), data)
+>>>>>>> Stashed changes
 
 class Location(Resource):
     """Subclass of Resource for locations, including storage containers."""
@@ -80,6 +89,20 @@ class Location(Resource):
         super(Location, self).__init__()
         self.items = items
 
+    def __str__(self):
+        return f"Location: {self.name} ({self.uuid.time_low})"
+
+    def save(self):
+        data = {name: self.name,
+                resource_type: self.resource_type,
+                description: self.description,
+                location: self.location,
+                items: self.items}
+<<<<<<< Updated upstream
+        json.dump(open(f"data/resources/{self.uuid.time_low}", "w"), data)
+=======
+>>>>>>> Stashed changes
+
 class Account(Resource):
     """Subclass of Resource for financial accounts."""
 
@@ -87,3 +110,20 @@ class Account(Resource):
                  currency='GBP', balance=0):
         super(Account, self).__init__()
         self.balance = balance
+
+    def __str__(self):
+        return f"Account: {self.name} ({self.uuid.time_low})"
+<<<<<<< Updated upstream
+=======
+
+    def save(self):
+        data = {name: self.name,
+                resource_type: self.resource_type,
+                description: self.description,
+                location: self.location,
+                currency: self.currency,
+                balance: self.balance,
+                uuid: str(self.uuid),
+                data_version: 0}
+        json.dump(open(f"data/people/{self.name}", "w"), data)
+>>>>>>> Stashed changes
