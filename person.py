@@ -24,11 +24,11 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+c84bf18'
+__version__ = '0.0+a1e178c'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
-Version 0.0 (master@c84bf18)
+Version 0.0 (master@a1e178c)
 committed 2 May 2022
 Data version 0 (0x00000000)"""
 
@@ -62,7 +62,7 @@ class Person():
                 activities: self.activities,
                 uuid: str(self.uuid),
                 data_version: 0}
-        json.dump(open(f"data/people/{name}", "w"), data)
+        json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)
 
     def add_contact(self, type, value):
         if type not in self.contacts:
