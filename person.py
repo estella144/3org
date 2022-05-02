@@ -62,7 +62,7 @@ class Person():
                 activities: self.activities,
                 uuid: str(self.uuid),
                 data_version: 0}
-        json.dump(open(f"data/people/{name}", "w"), data)
+        json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)
 
     def add_contact(self, type, value):
         if type not in self.contacts:
