@@ -24,11 +24,11 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+2c9321c'
+__version__ = '0.0+c84bf18'
 __all__ = ['Resource', 'ConsumableResource', 'Location']
 ABOUT = """resource module for 3org
-Version 0.0 (master@2c9321c)
-committed 1 May 2022
+Version 0.0 (master@c84bf18)
+committed 2 May 2022
 Data version 0 (0x00000000)"""
 
 class Resource():
@@ -75,11 +75,7 @@ class ConsumableResource(Resource):
                 expires: self.expires,
                 uuid: str(self.uuid),
                 data_version: 0}
-<<<<<<< Updated upstream
         json.dump(open(f"data/resources/{self.uuid.time_low}", "w"), data)
-=======
-        json.dump(open(f"data/people/{self.name}", "w"), data)
->>>>>>> Stashed changes
 
 class Location(Resource):
     """Subclass of Resource for locations, including storage containers."""
@@ -98,10 +94,7 @@ class Location(Resource):
                 description: self.description,
                 location: self.location,
                 items: self.items}
-<<<<<<< Updated upstream
         json.dump(open(f"data/resources/{self.uuid.time_low}", "w"), data)
-=======
->>>>>>> Stashed changes
 
 class Account(Resource):
     """Subclass of Resource for financial accounts."""
@@ -113,8 +106,6 @@ class Account(Resource):
 
     def __str__(self):
         return f"Account: {self.name} ({self.uuid.time_low})"
-<<<<<<< Updated upstream
-=======
 
     def save(self):
         data = {name: self.name,
@@ -125,5 +116,4 @@ class Account(Resource):
                 balance: self.balance,
                 uuid: str(self.uuid),
                 data_version: 0}
-        json.dump(open(f"data/people/{self.name}", "w"), data)
->>>>>>> Stashed changes
+        json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)

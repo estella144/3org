@@ -24,12 +24,12 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+2c9321c'
+__version__ = '0.0+c84bf18'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
-Version 0.0 (master@2c9321c)
-committed 1 May 2022
+Version 0.0 (master@c84bf18)
+committed 2 May 2022
 Data version 0 (0x00000000)"""
 
 class Person():
