@@ -38,8 +38,10 @@ def cls():
         os.system('clear')
 
 def home():
+    global __version__
+    
     cls()
-    print('3org 0.0+7b6b0d1.main\n')
+    print(f'3org {__version__}\n')
     print('Select one of the following to continue:')
     print('[P]eople')
     print('[R]esources')
