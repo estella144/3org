@@ -38,6 +38,7 @@ def cls():
         os.system('clear')
 
 def home():
+    cls()
     print('3org 0.0+7b6b0d1.main\n')
     print('Select one of the following to continue:')
     print('[P]eople')
@@ -65,8 +66,16 @@ def home():
         if quit_choice.startswith('y'):
             quit()
         else:
-            cls()
             home()
     else:
         input("Unrecognized choice. Press any key to return")
         cls()
+
+def main():
+    print(ABOUT)
+    print("\nPress RETURN to continue")
+    input()
+    home()
+
+if __name__ == "__main__":
+    main()
