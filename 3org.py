@@ -24,12 +24,13 @@ import os
 import uuid
 
 from replace_forbidden import replace_forbidden
+import person
+import resource
 
-__version__ = '0.0+7b6b0d1.ninjas.unmerged'
-__all__ = ['Resource', 'ConsumableResource', 'Location', 'Account']
+__version__ = '0.0+5c6056d.ninjas.unmerged'
 ABOUT = """3org
-Version 0.0 (7b6b0d1.ninjas.unmerged)
-committed 2 May 2022"""
+Version 0.0 (5c6056d.ninjas.unmerged)
+committed 7 May 2022"""
 
 def cls():
     if os.name == 'nt':
@@ -53,7 +54,7 @@ def home():
 
     # Not implemented yet
     if choice.startswith('p'):
-        pass
+        people()
     elif choice.startswith('r'):
         pass
     elif choice.startswith('a'):
@@ -71,7 +72,38 @@ def home():
             home()
     else:
         input("Unrecognized choice. Press any key to return")
-        cls()
+        home()
+
+def people():
+    global __version__
+
+    cls()
+    print(f"3org {__version__}\n")
+    print('[V]iew People')
+    print('[A]dd Person')
+    print('[B]ack to Home')
+    print('[Q]uit')
+    
+    choice = input('3org> ').lower()
+
+    if choice.startswith('v'):
+        pass
+    elif choice.startswith('a'):
+        pass
+    elif choice.startswith('b'):
+        home()
+    elif choice.startswith('q'):
+        print("Are you sure you want to quit?")
+        print("[Y/N] (default: no)")
+        quit_choice = input("3org> ").lower()
+
+        if quit_choice.startswith('y'):
+            quit()
+        else:
+            people()
+    else:
+        input("Unrecognized choice. Press any key to return")
+        home()
 
 def main():
     print(ABOUT)
