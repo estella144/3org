@@ -27,7 +27,7 @@ from replace_forbidden import replace_forbidden
 import person
 import resource
 
-__version__ = '0.0+5c6056d.ninjas.unmerged'
+__version__ = '0.0+96fdfdb.ninjas.unmerged'
 ABOUT = """3org
 Version 0.0 (5c6056d.ninjas.unmerged)
 committed 7 May 2022"""
@@ -101,6 +101,37 @@ def people():
             quit()
         else:
             people()
+    else:
+        input("Unrecognized choice. Press any key to return")
+        home()
+
+def settings():
+    print(f"3org {__version__}\n")
+    print("[A]bout")
+    print("[G]eneral")
+    print("[L]egal")
+    print("[B]ack to Home")
+    print("[Q]uit")
+
+    choice = input("3org> ").lower()
+
+    if choice.startswith('a'):
+        pass
+    elif choice.startswith('g'):
+        pass
+    elif choice.startswith('l'):
+        pass
+    elif choice.startswith('b'):
+        home()
+    elif choice.startswith('q'):
+        print("Are you sure you want to quit?")
+        print("[Y/N] (default: no)")
+        quit_choice = input("3org> ").lower()
+
+        if quit_choice.startswith('y'):
+            quit()
+        else:
+            settings()
     else:
         input("Unrecognized choice. Press any key to return")
         home()
