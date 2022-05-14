@@ -28,7 +28,7 @@ __version__ = '0.0+7b6b0d1.ninjas.unmerged'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
-Version 0.0 (7b6b0d1.ninjas.unmerged)
+Version 0.0 (26fbfb3.ninjas.unmerged)
 committed 7 May 2022
 Data version 0 (0x00000000)"""
 
@@ -46,14 +46,14 @@ class Person():
         self.contacts = contacts
         self.uuid = uuid
         print(f'Person {uuid.time_low} constructed successfully. Saving.')
-        self.save()
+        self.save(first_time=True)
         print(f'Person {uuid.time_low} saved successfully.')
         print(f'You may now quit the program without affecting this person.')
 
     def __str__(self):
         return f"Person: {self.name} ({self.uuid.time_low})"
 
-    def save(self):
+    def save(self, first_time=False):
         print(f"Saving person {self.uuid.time_low} do not quit the program...")
         data = {name: self.name,
                 description: self.description,
@@ -63,6 +63,11 @@ class Person():
                 uuid: str(self.uuid),
                 data_version: 0}
         json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)
+        if first_time:
+            meta = json.load(open(f"data/people/meta.txt"), "r"))
+            meta["uuid_to_name"][str(self.uuid.time_low)] = name
+            meta["meta"]["number_of_people"] += 1
+            json.dump(open(f"data/people/{self.uuid.time_low}", "w"), meta)
 
     def add_contact(self, type, value):
         if type not in self.contacts:

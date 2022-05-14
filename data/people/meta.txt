@@ -1,0 +1,8 @@
+{
+  uuid_to_name: {
+  },
+  meta: {
+    number_of_people: 0
+  },
+  data_version: 0
+}
