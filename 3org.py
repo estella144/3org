@@ -27,9 +27,9 @@ from replace_forbidden import replace_forbidden
 import person
 import resource
 
-__version__ = '0.0+96fdfdb.ninjas.unmerged'
+__version__ = '0.0+57fb9c2.main'
 ABOUT = """3org
-Version 0.0 (5c6056d.ninjas.unmerged)
+Version 0.0 (57fb9c2.main)
 committed 7 May 2022"""
 
 def cls():
@@ -40,7 +40,7 @@ def cls():
 
 def home():
     global __version__
-    
+
     cls()
     print(f'3org {__version__}\n')
     print('Select one of the following to continue:')
@@ -83,7 +83,7 @@ def people():
     print('[A]dd Person')
     print('[B]ack to Home')
     print('[Q]uit')
-    
+
     choice = input('3org> ').lower()
 
     if choice.startswith('v'):
