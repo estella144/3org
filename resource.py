@@ -24,10 +24,10 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+57fb9c2.main'
+__version__ = '0.0+8663078.ninjas.unmerged'
 __all__ = ['Resource', 'ConsumableResource', 'Location', 'Account']
 ABOUT = """resource module for 3org
-Version 0.0 (57fb9c2.main)
+Version 0.0 (8663078.ninjas.unmerged)
 committed 7 May 2022
 Data version 0 (0x00000000)"""
 
