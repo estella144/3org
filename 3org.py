@@ -27,9 +27,9 @@ from replace_forbidden import replace_forbidden
 import person
 import resource
 
-__version__ = '0.0+1a77ca3.ninjas.unmerged'
+__version__ = '0.0+03619ba.ninjas.unmerged'
 ABOUT = """3org
-Version 0.0 (1a77ca3.ninjas.unmerged)
+Version 0.0 (03619ba.ninjas.unmerged)
 committed 21 May 2022"""
 
 def cls():
@@ -103,7 +103,7 @@ def people():
             people()
     else:
         input("Unrecognized choice. Press any key to return")
-        home()
+        people()
 
 def settings():
     print(f"3org {__version__}\n")
