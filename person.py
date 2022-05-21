@@ -64,7 +64,7 @@ class Person():
                 data_version: 0}
         json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)
         if first_time:
-            meta = json.load(open(f"data/people/meta.txt"), "r"))
+            meta = json.load(open(f"data/people/meta.txt"), "r")
             meta["uuid_to_name"][str(self.uuid.time_low)] = name
             meta["meta"]["number_of_people"] += 1
             json.dump(open(f"data/people/{self.uuid.time_low}", "w"), meta)
