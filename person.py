@@ -24,11 +24,11 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+775c44f.ninjas.unmerged'
+__version__ = '0.0+1a77ca3.ninjas.unmerged'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
-Version 0.0 (775c44f.ninjas.unmerged)
+Version 0.0 (1a77ca3.ninjas.unmerged)
 committed 21 May 2022
 Data version 0 (0x00000000)"""
 
@@ -64,7 +64,7 @@ class Person():
                 data_version: 0}
         json.dump(open(f"data/people/{self.uuid.time_low}", "w"), data)
         if first_time:
-            meta = json.load(open(f"data/people/meta.txt"), "r")
+            meta = json.load(open(f"data/people/meta.txt"), "r"))
             meta["uuid_to_name"][str(self.uuid.time_low)] = name
             meta["meta"]["number_of_people"] += 1
             json.dump(open(f"data/people/{self.uuid.time_low}", "w"), meta)
