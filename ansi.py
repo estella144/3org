@@ -18,11 +18,14 @@
 
 import sys
 
+<<<<<<< HEAD
 __version__ = '0.0+3565dce.main'
 ABOUT = """3org
 Version 0.0 (3565dce.main)
 committed 25 May 2022"""
 
+=======
+>>>>>>> 3565dceb2c4c201eb4e6f6dc63ca275bc6e39e87
 if 'idlelib.run' not in sys.modules:
 
     class fg:
