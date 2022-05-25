@@ -139,6 +139,8 @@ def settings():
         home()
 
 def main():
+    # System call to enable ANSI escape codes.
+    os.system('')
     print(ABOUT)
     print("\nPress RETURN to continue")
     input()
