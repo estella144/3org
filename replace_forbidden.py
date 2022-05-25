@@ -16,12 +16,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-__version__ = '0.0+1a77ca3.ninjas.unmerged'
+__version__ = '0.0+72727bd.main'
 __all__ = ['replace_forbidden']
 
 ABOUT = """replace_forbidden module for 3org
-Version 0.0 (1a77ca3.ninjas.unmerged)
-committed 21 May 2022
+Version 0.0 (72727bd.main)
+committed 25 May 2022
 Data version 0 (0x00000000)"""
 
 def replace_forbidden(string):

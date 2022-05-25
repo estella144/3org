@@ -24,12 +24,12 @@ import uuid
 
 from replace_forbidden import replace_forbidden
 
-__version__ = '0.0+1a77ca3.ninjas.unmerged'
+__version__ = '0.0+72727bd.main'
 __all__ = ['Person', 'load_person']
 
 ABOUT = """person module for 3org
-Version 0.0 (1a77ca3.ninjas.unmerged)
-committed 21 May 2022
+Version 0.0 (72727bd.main)
+committed 25 May 2022
 Data version 0 (0x00000000)"""
 
 class Person():
