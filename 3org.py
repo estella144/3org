@@ -23,10 +23,12 @@ import logging.config
 import os
 import uuid
 
-from replace_forbidden import replace_forbidden
+from replace_forbidden import replace_forbidden as rp
+import replace_forbidden
 import person
 import resource
-from ansi import *
+from ansi import fg, bg
+import ansi
 
 __version__ = '0.0+72727bd.main'
 ABOUT = """3org
@@ -61,7 +63,7 @@ def home():
     elif choice.startswith('a'):
         pass
     elif choice.startswith('s'):
-        pass
+        settings()
     elif choice.startswith('q'):
         print("Are you sure you want to quit?")
         print("[Y/N] (default: no)")
@@ -121,7 +123,7 @@ def settings():
     choice = input("3org> ").lower()
 
     if choice.startswith('a'):
-        pass
+        settings_about()
     elif choice.startswith('g'):
         pass
     elif choice.startswith('l'):
@@ -141,6 +143,17 @@ def settings():
         input(f"{fg.FAIL}Unrecognized choice. Press ENTER to return\
         {fg.ENDC}")
         settings()
+
+def settings_about():
+    global __version__
+
+    print(ABOUT)
+    print(ansi.ABOUT,"\n")
+    print(person.ABOUT,"\n")
+    print(replace_forbidden.ABOUT,"\n")
+    print(resource.ABOUT,"n")
+    input("Press ENTER to return to Settings...")
+    settings()
 
 def main():
     # System call to enable ANSI escape codes.

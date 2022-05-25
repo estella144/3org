@@ -18,9 +18,9 @@
 
 import sys
 
-__version__ = '0.0+3565dce.main'
-ABOUT = """3org
-Version 0.0 (3565dce.main)
+__version__ = '0.0+014407e.main'
+ABOUT = """ansi module for 3org
+Version 0.0 (014407e.main)
 committed 25 May 2022"""
 
 if 'idlelib.run' not in sys.modules:
