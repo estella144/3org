@@ -26,6 +26,7 @@ import uuid
 from replace_forbidden import replace_forbidden
 import person
 import resource
+from ansi import *
 
 __version__ = '0.0+72727bd.main'
 ABOUT = """3org
@@ -48,7 +49,7 @@ def home():
     print('[R]esources')
     print('[A]ctivities')
     print('[S]ettings')
-    print('[Q]uit')
+    print(f'{fg.FAIL}[Q]uit{fg.ENDC}')
 
     choice = input('3org> ').lower()
 
@@ -71,7 +72,8 @@ def home():
         else:
             home()
     else:
-        input("Unrecognized choice. Press any key to return")
+        input(f"{fg.FAIL}Unrecognized choice. Press ENTER to return\
+        {fg.ENDC}")
         home()
 
 def people():
@@ -82,7 +84,7 @@ def people():
     print('[V]iew People')
     print('[A]dd Person')
     print('[B]ack to Home')
-    print('[Q]uit')
+    print(f'{fg.FAIL}[Q]uit{fg.ENDC}')
 
     choice = input('3org> ').lower()
 
@@ -102,7 +104,8 @@ def people():
         else:
             people()
     else:
-        input("Unrecognized choice. Press any key to return")
+        input(f"{fg.FAIL}Unrecognized choice. Press ENTER to return\
+        {fg.ENDC}")
         people()
 
 def settings():
@@ -113,7 +116,7 @@ def settings():
     print("[G]eneral")
     print("[L]egal")
     print("[B]ack to Home")
-    print("[Q]uit")
+    print(f"{fg.FAIL}[Q]uit{fg.ENDC}")
 
     choice = input("3org> ").lower()
 
@@ -135,8 +138,9 @@ def settings():
         else:
             settings()
     else:
-        input("Unrecognized choice. Press any key to return")
-        home()
+        input(f"{fg.FAIL}Unrecognized choice. Press ENTER to return\
+        {fg.ENDC}")
+        settings()
 
 def main():
     # System call to enable ANSI escape codes.
