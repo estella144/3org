@@ -17,11 +17,12 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import sys
+import os
 
-__version__ = '0.0+014407e.main'
+__version__ = '0.0+6f23b54.main'
 ABOUT = """ansi module for 3org
-Version 0.0 (014407e.main)
-committed 25 May 2022"""
+Version 0.0 (6f23b54.main)
+committed 26 May 2022"""
 
 if 'idlelib.run' not in sys.modules:
 
@@ -73,8 +74,9 @@ else:
         UNDERLINE = ''
 
 if __name__ == "__main__":
-    print("This module is not intended to be used directly!\nLoading\
- 3org.py...")
+    os.system("")
+    print(f"{fg.FAIL}This module is not intended to be used directly!\n\
+{fg.WARNING}Loading 3org.py...{fg.ENDC}")
     _3org = open('3org.py')
     program = _3org.read()
     exec(program)
