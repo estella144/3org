@@ -1,0 +1,26 @@
+{
+  "3org": {
+    "about": "3org\nVersion 0.0 (cf34aa2.lang.l10n)\ncommitted 26 May 2022"
+    "cli_version": "3org: version 0.0+cf34aa2.lang.l10n\nPlatform: macOS 12.2.1 Intel (x86_64-i386) 64-bit\nPyInstaller 5.1 (target: macOS-12.2.1-x86_64-i386-64bit)"
+    "header": "3org %s"
+    "menus.header": "Select one of the following to continue:"
+    "menus.home.activities": "[A] Activities"
+    "menus.home.people": "[P] People"
+    "menus.home.resources": "[R] Resources"
+    "menus.home.settings": "[S] Settings"
+    "menus.home.add_person": "[A] Add Person..."
+    "menus.people.view_people": "[V] View People"
+    "menus.settings.about": "[A] About"
+    "menus.settings.general": "[G] General"
+    "menus.settings.legal": "[L] Legal"
+    "menus.std.back": "[B] Back to %s"
+    "menus.std.prompt": "3org> "
+    "menus.std.quit": "[Q] Quit"
+    "menus.std.unrecognised_choice": "Unrecognised choice, press ENTER to return"
+    "menus.quit.header": "Are you sure you want to quit?\n[Y/N] (default: no)"
+  },
+  "std": {
+    "no_direct_run": "This program is not intended to be run directly!"
+    "loading_3org": "Loading 3org..."
+  }
+}

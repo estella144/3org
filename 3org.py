@@ -35,7 +35,7 @@ ABOUT = """3org
 Version 0.0 (72727bd.main)
 committed 25 May 2022"""
 
-clt_version = '''3org: version 0.0+72727bd.main
+cli_version = '''3org: version 0.0+72727bd.main
 Platform: macOS 12.2.1 Intel (x86_64-i386) 64-bit
 PyInstaller 5.1 (target: macOS-12.2.1-x86_64-i386-64bit)'''
 
