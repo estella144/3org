@@ -1,0 +1,47 @@
+{
+  "3org": {
+    "about": "3org\nVersion 0.0 (917edbf.lang.l10n)\ncommis 26 mai 2022"
+    "cli_version": "3org: version 0.0+917edbf.lang.l10n\nSystème opérateur: macOS 12.2.1 Intel (x86_64-i386) 64-bit\nPyInstaller 5.1 (objectif: macOS-12.2.1-x86_64-i386-64bit)"
+    "header": "3org 0.0+917edbf.lang.l10n"
+    "menus.header": "Sélectionnez l'une des options suivantes pour continuer:"
+    "menus.home.activities": "[A] Activités"
+    "menus.home.people": "[P] Personnes"
+    "menus.home.resources": "[R] Ressources"
+    "menus.home.settings": "[S] Réglages"
+    "menus.home.add_person": "[A] Ajouter une personne..."
+    "menus.people.view_people": "[V] Voir les personnes"
+    "menus.settings.about": "[A] À propos"
+    "menus.settings.general": "[G] Généraux"
+    "menus.settings.legal": "[L] Légale"
+    "menus.std.back": "[B] Retour à %s"
+    "menus.std.prompt": "3org> "
+    "menus.std.quit": "[Q] Arrêter"
+    "menus.std.unrecognised_choice": "Choix non reconnu, appuyez sur ENTRER pour revenir"
+    "menus.quit.header": "Êtes-vous sûr de vouloir arrêter?\n[Y/N] (défaut: non)"
+  },
+  "error": {
+    "eacces_objfile": "Raison: Accès refusé sur le fichier objet (PermissionError)."
+    "eacces_metafile": "Raison: Accès refusé au fichier de métadonnées (PermissionError)."
+  },
+  "obj": {
+    "add_field.fail": "Impossible d'ajouter la réponse %s à %s\n%s"
+    "add_field.start": "Ajout du réponse \"%s\" à %s, ne arrêter pas le programme."
+    "add_field.success": "Le réponse \"%s\" a été ajouté avec succès à %s, en cours d'enregistrement."
+    "destroy.fail": "Impossible de supprimer %s %s.\n%s"
+    "destroy.start": "Suppression de %s %s, ne quittez pas le programme."
+    "destroy.success": "%s %s supprimé avec succès."
+    "init.fail": "Impossible de créer %s.\n%s"
+    "init.start": "Création de %s, ne arrêter pas le programme."
+    "init.success": "%s %s a été créé avec succès, enregistrement en cours."
+    "remove_field.fail": "Impossible de supprimer le réponse \"%s\" de %s.\n%s"
+    "remove_field.start": "Suppression du réponse \"%s\" de %s, ne arrêter pas le programme."
+    "remove_field.success": "Le réponse \"%s\" de %s a été supprimé avec succès, en cours d'enregistrement."
+    "save.fail": "Impossible d'enregistrer %s %s."
+    "save.start": "Enregistrement de %s %s, ne arrêter pas le programme."
+    "save.success": "%s %s a été enregistré avec succès."
+  },
+  "std": {
+    "no_direct_run": "Ce programme n'est pas destiné à être exécuté directement!"
+    "loading_3org": "Chargement de 3org..."
+  }
+}
