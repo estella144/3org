@@ -32,13 +32,13 @@
     "destroy.success": "Successfuly deleted %s %s, now saving."
     "init.fail": "Failed to create %s.\n%s"
     "init.start": "Creating %s, do not quit program."
-    "init.success": "Successfuly created %s %s, now saving."
+    "init.success": "Successfully created %s %s, now saving."
     "remove_field.fail": "Failed to remove field \"%s\" to %s\n%s"
     "remove_field.start": "Removing field \"%s\" from %s, do not quit program."
     "remove_field.success": "Successfully removed field \"%s\" from %s, now saving."
     "save.fail": "Failed to save %s %s.\n%s"
     "save.start": "Saving %s %s, do not quit program."
-    "save.success": "Successfuly saved %s %s."
+    "save.success": "Successfully saved %s %s."
   },
   "std": {
     "no_direct_run": "This program is not intended to be run directly!"
