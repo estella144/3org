@@ -1,0 +1,47 @@
+{
+  "3org": {
+    "about": "3org\nVersión 0.0 (917edbf.lang.l10n)\ncomprometí(mos) 26 may 2022"
+    "cli_version": "3org: versión 0.0+917edbf.lang.l10n\nSistema operativo: macOS 12.2.1 Intel (x86_64-i386) 64-bit\nPyInstaller 5.1 (objetivo: macOS-12.2.1-x86_64-i386-64bit)"
+    "header": "3org 0.0+917edbf.lang.l10n"
+    "menus.header": "Seleccione uno de los siguientes para continuar:"
+    "menus.home.activities": "[A] Actividades"
+    "menus.home.people": "[P] Personas"
+    "menus.home.resources": "[R] Recursos"
+    "menus.home.settings": "[S] Configuración"
+    "menus.home.add_person": "[A] Añadir persona..."
+    "menus.people.view_people": "[V] Ver personas"
+    "menus.settings.about": "[A] Sobre"
+    "menus.settings.general": "[G] General"
+    "menus.settings.legal": "[L] Legal"
+    "menus.std.back": "[B] Regresar a %s"
+    "menus.std.prompt": "3org> "
+    "menus.std.quit": "[Q] Salir"
+    "menus.std.unrecognised_choice": "Opción no reconocida, presione ENTRAR para regresar"
+    "menus.quit.header": "¿Estás segur(o/a) de que quieres salir? \n[Y/N] (predeterminado: no)"
+  },
+  "error": {
+    "eacces_objfile": "Motivo: Acceso denegado en el archivo de objeto (PermissionError)."
+    "eacces_metafile": "Motivo: acceso denegado en el archivo de metadatos (PermissionError)."
+  },
+  "obj": {
+    "add_field.fail": "Error al agregar el respuesta \"%s\" a %s\n%s"
+    "add_field.start": "Añadiendo el respuesta \"%s\" a %s, no salga del programa."
+    "add_field.success": "Se agregó con éxito el respuesta \"%s\" a %s, ahora se guarda."
+    "destroy.fail": "Error al eliminar %s %s.\n%s"
+    "destroy.start": "Eliminando %s %s, no salga del programa."
+    "destroy.success": "Eliminó con éxito %s %s."
+    "init.fail": "Error al crear %s.\n%s"
+    "init.start": "Creando %s, no salga del programa."
+    "init.success": "%s %s creado con éxito, ahora guardando."
+    "remove_field.fail": "No se pudo eliminar el respuesta \"%s\" a %s\n%s"
+    "remove_field.start": "Eliminando el respuesta \"%s\" de %s, no salga del programa."
+    "remove_field.success": "Se eliminó con éxito el respuesta \"%s\" de %s, ahora se guarda."
+    "save.fail": "Error al guardar %s %s.\n%s"
+    "save.start": "Guardando %s %s, no salga del programa."
+    "save.success": "Guardado con éxito %s %s."
+  },
+  "std": {
+    "no_direct_run": "¡Este programa no está diseñado para ejecutarse directamente!"
+    "loading_3org": "Cargando 3org..."
+  }
+}
