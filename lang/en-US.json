@@ -29,7 +29,7 @@
     "add_field.success": "Successfully added field \"%s\" to %s, now saving."
     "destroy.fail": "Failed to delete %s %s.\n%s"
     "destroy.start": "Deleting %s %s, do not quit program."
-    "destroy.success": "Successfuly deleted %s %s, now saving."
+    "destroy.success": "Successfully deleted %s %s, now saving."
     "init.fail": "Failed to create %s.\n%s"
     "init.start": "Creating %s, do not quit program."
     "init.success": "Successfully created %s %s, now saving."
