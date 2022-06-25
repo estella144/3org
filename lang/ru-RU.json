@@ -1,0 +1,47 @@
+{
+  "3org": {
+    "about": "3org\nВерсия 0.0 (917edbf.lang.l10n)\nсоверша́ли 26 мая 2022 г."
+    "cli_version": "3org: версия 0.0+917edbf.lang.l10n\nОперационная система: macOS 12.2.1 Intel (x86_64-i386) 64-bit\nPyInstaller 5.1 (цель: macOS-12.2.1-x86_64-i386-64bit)"
+    "header": "3org 0.0+917edbf.lang.l10n"
+    "menus.header": "Чтобы продолжить, выберите один из следующих вариантов:"
+    "menus.home.activities": "[A] Mероприятия"
+    "menus.home.people": "[P] Люди"
+    "menus.home.resources": "[R] Ресурсы"
+    "menus.home.settings": "[S] Hастройки"
+    "menus.home.add_person": "[A] Добавить человека..."
+    "menus.people.view_people": "[V] Посмотреть людейe"
+    "menus.settings.about": "[A] O"
+    "menus.settings.general": "[G] Общие"
+    "menus.settings.legal": "[L] Легальная"
+    "menus.std.back": "[B] Назад к %s"
+    "menus.std.prompt": "3org> "
+    "menus.std.quit": "[Q] Прекращать"
+    "menus.std.unrecognised_choice": "Неизвестный выбор, нажмите ВОЙТИ, чтобы вернуться"
+    "menus.quit.header": "Вы уверены, что хотите выйти?\n[Y-Да/N-Нет] (по умолчанию: нет)"
+  },
+  "error": {
+    "eacces_objfile": "Причина: Отказано в доступе к объектному файлу (PermissionError)."
+    "eacces_metafile": "Причина: Отказано в доступе к файлу метаданных (PermissionError)ответ."
+  },
+  "obj": {
+    "add_field.fail": "Не удалось добавить ответ \"%s\" в %s\n%s"
+    "add_field.start": "Добавляя ответ \"%s\" к %s, не выходите из программы."
+    "add_field.success": "Успешно добавленное ответ \"%s\" к %s, теперь сохраняется."
+    "destroy.fail": "Не удалось удалить %s %s.\n%s"
+    "destroy.start": "Удаление %s %s, не выходите из программы."
+    "destroy.success": "Успешно удалено %s %s."
+    "init.fail": "Не удалось создать %s.\n%s"
+    "init.start": "Создание %s, не выходите из программы."
+    "init.success": "Успешно созданный %s %s, теперь сохраняет."
+    "remove_field.fail": "Не удалось удалить ответ \"%s\" из %s\n%s"
+    "remove_field.start": "Удаление ответ \"%s\" из %s, не выходите из программы."
+    "remove_field.success": "Успешно удаленное поле \"%s\" из %s, теперь сохраняется."
+    "save.fail": "Не удалось сохранить %s %s.\n%s"
+    "save.start": "Сохранение %s %s, не выходите из программы."
+    "save.success": "Успешно сохранен %s %s."
+  },
+  "std": {
+    "no_direct_run": "Эта программа не предназначена для прямого запуска!"
+    "loading_3org": "Загрузка 3org..."
+  }
+}
